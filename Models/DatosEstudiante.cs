@@ -8,7 +8,7 @@ namespace tareaitla2.Models
         public int IdEstudiante { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public bool Activo { get; set; }
+        public bool Activo { get; set ; }
         public string Carrera { get; set; }
     }
 }

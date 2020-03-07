@@ -55,8 +55,9 @@ namespace tareaitla2.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdEstudiante,Nombre,Apellido,Activo,Carrera")] DatosEstudiante datosEstudiante)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid )
             {
+                
                 _context.Add(datosEstudiante);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
